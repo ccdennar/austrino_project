@@ -1,5 +1,5 @@
 {
-  "extends": "../../packages/typescript/base.json",
+  "extends": "@austrino/typescript/base.json",
   "compilerOptions": {
     "plugins": [{ "name": "next" }],
     "baseUrl": ".",
