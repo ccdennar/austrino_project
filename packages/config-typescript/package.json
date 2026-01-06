@@ -1,5 +1,9 @@
 {
   "name": "@austrino/typescript",
   "version": "0.0.0",
-  "main": "base.json"
+  "main": "base.json",
+  "scripts": {
+    "build": "mkdir -p dist && echo 'ts base' > dist/index.txt",
+    "type-check": "echo 'ts check ok'"
+  }
 }

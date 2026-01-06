@@ -4,6 +4,7 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {
+    "build": "tsc --noEmit && mkdir -p dist && echo 'utils ok' > dist/index.js",
     "type-check": "tsc --noEmit",
     "lint": "eslint src/"
   },

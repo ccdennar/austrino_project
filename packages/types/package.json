@@ -4,6 +4,7 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {
+    "build": "tsc --noEmit && mkdir -p dist && echo 'types ok' > dist/index.txt",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
