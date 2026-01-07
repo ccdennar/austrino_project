@@ -1,8 +1,15 @@
 {
   "name": "@austrino/ui",
   "version": "0.0.0",
-  "main": "./src/index.ts",
+  "main": "./src/index.js",
   "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
     "build": "tsc --noEmit && mkdir -p dist && echo 'ui ok' > dist/index.js",
     "type-check": "tsc --noEmit",
