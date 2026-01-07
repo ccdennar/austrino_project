@@ -1,14 +1,12 @@
-// packages/ui/src/hero-carousel.tsx
+// packages/ui/src/Carousel/HeroCarousel.tsx
 'use client';
 
-import React, { FC } from 'react';
+import { FC } from 'react';
 
-export const HeroCarousel: FC<{ slides: any[] }> = ({ slides }) => {
-  return React.createElement(
-    'div',
-    null,
-    slides.map((s, i) =>
-      React.createElement('div', { key: i }, s.title)
-    )
-  );
-};
+export const HeroCarousel: FC<{ slides: any[] }> = ({ slides }) => (
+  <div>
+    {slides.map((s, i) => (
+      <div key={i}>{s.title}</div>
+    ))}
+  </div>
+);
