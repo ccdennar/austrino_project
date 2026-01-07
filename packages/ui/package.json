@@ -11,10 +11,9 @@
     }
   },
   "scripts": {
-    "build": "tsc --noEmit && mkdir -p dist && echo 'ui ok' > dist/index.js",
-    "type-check": "tsc --noEmit",
-    "lint": "eslint src/"
-  },
+  "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+  "dev": "tsup src/index.ts --format esm,cjs --dts --watch"
+},
   "dependencies": {
     "swiper": "^11.1.3",
     "react": "^18.3.1",
